@@ -1,0 +1,14 @@
+.dialog
+  %h1 Sign up
+  = form_for(@user) do |f|
+    = render 'shared/error_messages'
+    = f.label :username
+    = f.text_field :username
+    = f.label :password
+    = f.password_field :password
+    = f.label :password_confirmation, "Confirmation"
+    = f.password_field :password_confirmation
+    = f.submit "Sign up"
+  %ul.session-links
+    %li Already have an account?
+    %li= link_to "Sign In", root_path

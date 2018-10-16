@@ -1,0 +1,7 @@
+%body
+  %header.header
+    %a.header-logo{:href => "/"}= render 'layouts/logo'
+    %ul.header-nav
+      - if logged_in?
+        %li
+          = link_to "Sign out", logout_path, method: :delete
