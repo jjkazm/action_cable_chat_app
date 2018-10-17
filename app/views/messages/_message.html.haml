@@ -2,4 +2,4 @@
   .message-user
     #{ message.user.username}:
   .message-content
-    #{ message.content }
+    #{ sanitize markdown_to_html(message.content) }

@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'html2haml', '~> 2.2'
 
+gem 'jbuilder',                '2.4.1'
+gem 'kramdown',                '1.12.0'
+
 gem 'rails',                   '5.0.1'
 gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.6.6'
